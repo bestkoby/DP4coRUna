@@ -9,6 +9,7 @@ import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import Map from '../screens/map';
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import Home from '../screens/home';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -28,7 +29,7 @@ export default function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Home"
-        component={TabTwoNavigator}
+        component={Home}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
